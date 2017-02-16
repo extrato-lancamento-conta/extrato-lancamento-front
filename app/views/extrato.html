@@ -1,0 +1,29 @@
+<div class="container">
+	<div class="well">
+	    <h1>Extrato de lançamentos em conta</h1>
+	</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Data do lançamento</th>
+          <th>Descrição</th>
+          <th>Número</th>
+          <th>Situação</th>
+          <th>Data de confirmação</th>
+          <th>Dados bancários</th>
+          <th>Valor final</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="lancamento in lancamentos">
+          <td>{{lancamento.dataEfetivaLancamento}}</td>
+          <td>{{lancamento.lancamentoNomeTipoOperacao}}</td>
+          <td>{{lancamento.lancamentoNumeroRemessaBanco}}</td>
+          <td>{{lancamento.lancamentoNomeSituacaoRemessa}}</td>
+          <td>{{lancamento.dataLancamentoContaCorrenteCliente}}</td>
+          <td>{{lancamento.nomeBanco}} ' Ag ' {{lancamento.lancamentoDadosNumeroAgencia}} ' CC ' {{lancamento.lancamentoDadosNumeroContaCorrente}}</td>
+          <td>{{lancamento.valorLancamentoRemessa}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>

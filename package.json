@@ -1,0 +1,20 @@
+{
+  "name": "extrato-lancamento-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./app -a localhost -p 8081",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/extrato-lancamento-conta/extrato-lancamento-front.git"
+  },
+  "author": "Wellington Abrile",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/extrato-lancamento-conta/extrato-lancamento-front/issues"
+  },
+  "homepage": "https://github.com/extrato-lancamento-conta/extrato-lancamento-front#readme"
+}
